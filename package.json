@@ -2,7 +2,7 @@
   "name": "bentham",
   "version": "0.0.1",
   "description": "Components for metrics interfaces",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,11 @@
   ],
   "author": "Claudio Brandolino",
   "license": "ISC",
+  "scripts": {
+    "dev": "webpack-dev-server --port 3000 --config demo/webpack.config.dev.js --content-base demo",
+    "clean-lib": "rimraf lib",
+    "build-lib": "npm run clean-lib && babel src --out-dir lib"
+  },
   "dependencies": {
     "babel-cli": "^6.5.1",
     "babel-core": "^6.0.0",
