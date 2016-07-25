@@ -1,0 +1,33 @@
+.playground {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0;
+}
+.playgroundPreview {
+  flex-grow: 1;
+  height: 300px;  
+  background-color: rgb(255,254,242);
+
+}
+.playgroundCode{
+  flex-grow: 1;
+
+  height: 300px;
+}
+.playgroundStage .CodeMirror-wrap {
+  height: 300px;
+}
+.previewArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 400px;
+  margin: 0 auto;
+}
+.previewArea svg {
+  height: auto;
+  width: 100%;
+}
