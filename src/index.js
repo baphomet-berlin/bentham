@@ -1,1 +1,1 @@
-console.log('bubu');
+export { default as DonutChart } from './charts/DonutChart';
