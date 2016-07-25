@@ -1,1 +1,9 @@
-<DonutChart />
+<DonutChart
+  data={[
+    {x: "Thing", y: 62},
+    {x: "Other thing", y: 91},
+    {x: "Further thing", y: 55},
+    {x: "Not a thing", y: 55},
+  ]}
+
+/>

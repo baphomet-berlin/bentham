@@ -3,6 +3,6 @@ import { VictoryPie } from 'victory';
 
 export default class DonutChart extends React.Component {
   render() {
-    return <VictoryPie innerRadius={140}/>;
+    return <VictoryPie {...this.props} innerRadius={140} />;
   }
 }
