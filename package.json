@@ -2,13 +2,12 @@
   "name": "bentham",
   "version": "0.0.1",
   "description": "Components for metrics interfaces",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --port 3000 --config demo/webpack.config.dev.js --content-base demo",
-    "clean-lib": "rimraf lib",
-    "build-lib": "npm run clean-lib && babel src --out-dir lib"
+    "build": "./node_modules/.bin/babel src --out-dir lib"
   },
   "keywords": [
     "react",
@@ -34,7 +33,7 @@
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^1.2.8",
     "webpack-dev-server": "^1.10.0",
-    "babel-cli": "^6.5.1",
+    "babel-cli": "^6.5.2",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.2.3",
     "babel-polyfill": "^6.5.0",
