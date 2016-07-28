@@ -1,4 +1,4 @@
-<div>
+<div style={{position:'relative'}}>
   <DonutChart
     data={[
       {x: "Thing", y: 62},
@@ -7,5 +7,7 @@
       {x: "Not a thing", y: 55},
     ]}>
   </DonutChart>
-  <LegendItemAtom item={{id: 1}}>example</LegendItemAtom>
+  <LegendItemAtom className="center" item={{id: 1}}>
+    example
+  </LegendItemAtom>
 </div>
