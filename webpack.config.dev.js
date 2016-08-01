@@ -5,7 +5,7 @@ var config = require("./webpack.config");
 
 // **WARNING**: Mutates base configuration.
 // We do this because lodash isn't available in `production` mode.
-config.output.filename = "component-playground.js";
+config.output.filename = "bentham.js";
 config.plugins = [
   new webpack.SourceMapDevToolPlugin("[file].map")
 ];
