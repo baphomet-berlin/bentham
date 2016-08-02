@@ -7,9 +7,11 @@ class SingleDatapointLegend extends React.Component {
     selectedItem: React.PropTypes.number,
   }
 
-  static defaultProps = {
-    containerComponent: () => null,
-    labelComponent: <div />,
+  static get defaultProps() {
+    return {
+      containerComponent: () => null,
+      labelComponent: <div />,
+    }
   }
 
   render() {
