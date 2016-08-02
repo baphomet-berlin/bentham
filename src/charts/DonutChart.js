@@ -6,18 +6,28 @@ class DonutChart extends React.Component {
     data: React.PropTypes.arrayOf(React.PropTypes.object),
     labelComponent: React.PropTypes.element,
     standalone: React.PropTypes.bool,
+    colorFunction: React.PropTypes.func,
   }
-  static defaultProps = {
-    labels: () => null,
-    labelComponent: <div />,
+
+  static get defaultProps() {
+    return {
+      labels: () => null,
+      labelComponent: <div />,
+      colorFunction: el => el.color
+    }
   }
+
   render() {
-    const {container, children, ...props} = this.props;
+    const {container, children, colorFunction, ...props} = this.props;
+    const colors = this.props.data.map((el, i) => colorFunction(el, i));
+
     return (
       <VictoryPie 
         { ...props }
         container={() => chartContainer} 
-        innerRadius={140}>
+        innerRadius={140}
+        colorScale={colors}
+      >
       </VictoryPie>);
 
   }

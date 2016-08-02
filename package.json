@@ -1,6 +1,6 @@
 {
   "name": "bentham",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Components for metrics interfaces",
   "main": "lib/index.js",
   "scripts": {
