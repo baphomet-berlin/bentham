@@ -1,0 +1,14 @@
+<div style={{position:'relative'}}>
+  <DonutChart
+    data={[
+      {x: "Thing", y: 62, color: "#000" },
+      {x: "Other thing", y: 91, color: "#ccc" },
+      {x: "Further thing", y: 55, color: "#aaa" },
+      {x: "Not a thing", y: 55, color: "#999"},
+    ]}
+    >
+  </DonutChart>
+  <LegendItemAtom className="center" item={{id: 1}}>
+    example
+  </LegendItemAtom>
+</div>

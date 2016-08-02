@@ -1,0 +1,70 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "arrow-body-style": 0,
+    "camelcase": 0,
+    "comma-spacing": 0,
+    "comma-dangle": [2, "always-multiline"],
+    "complexity": [
+      2,
+      12
+    ],
+    "eol-last": 0,
+    "func-names": 0,
+    "guard-for-in": 2,
+    "id-length": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "key-spacing": 0,
+    "max-depth": [
+      2,
+      3
+    ],
+    "max-len": [
+      2,
+      100
+    ],
+    "max-nested-callbacks": [
+      2,
+      3
+    ],
+    "max-statements": [
+      2,
+      15
+    ],
+    "max-params": [
+      2,
+      4
+    ],
+    "new-cap": 0,
+    "no-console": 1,
+    "no-else-return": 0,
+    "no-loop-func": 1,
+    "no-multi-spaces": 2,
+    "no-nested-ternary": 0,
+    "no-param-reassign": 0,
+    "no-undef": 0,
+    "no-undefined": 2,
+    "no-unused-expressions": 0,
+    "no-unused-vars": 2,
+    "no-use-before-define": 0,
+    "no-var": 2,
+    "padded-blocks": 0,
+    "prefer-const": 2,
+    "radix": 0,
+    "react/jsx-boolean-value": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "react/prop-types": 2,
+    "react/react-in-jsx-scope": 0,
+    "react/sort-comp": 2,
+    "spaced-comment": 0,
+    "space-before-function-paren": 0,
+    "strict": 2,
+    "vars-on-top": 0
+  }
+}
